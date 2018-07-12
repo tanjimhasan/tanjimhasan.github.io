@@ -10,7 +10,7 @@
         $('[data-toggle="tooltip"]').tooltip();
         
 
-        $(".site-header").sticky({topSpacing: 0});
+        $('.head-area').sticky({topSpacing: 0});
         
         //smooth scroll
         $('li.smooth-menu a').bind('click',function(event){
