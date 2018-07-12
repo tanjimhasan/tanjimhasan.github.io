@@ -1,0 +1,140 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) { 
+  .menu {
+    margin-left: 95px;
+}
+.single-featured-item {
+    margin-left: 40px;
+}
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ .logo {
+	text-align: center;
+	
+}
+.is-sticky .menu li a{
+  padding: 10px 18px;
+}
+    .menu {
+	font-size: 13px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: 28px;
+}
+   /* .slide-content {
+	margin-top: -364px;
+	width: 794px;
+	margin-left: 70px;
+}*/
+    .member {
+	width: 170px;
+	margin-left: 18px;
+}
+    .single-client img {
+	width: 100px;
+}
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	.header-area {
+    padding-top: 15px;
+}
+ .menu {
+    margin-left: 0px;
+}
+    .navbar-toggle {
+	float: none;
+	margin: 0;
+        border: 1px solid #fff;
+}
+    .navbar-toggle .icon-bar {
+	background: #fff;
+}
+    
+.mobile-menu-activated ul.nav.navbar-nav {
+  background: #140E2F;
+  text-align: center;
+}
+.mobile-menu-activated ul.nav.navbar-nav li {
+  display: block;
+}
+.mobile-menu-activated ul.nav.navbar-nav li a {
+  padding: 18px;
+  border-bottom: 1px solid #333;
+}
+    .navbar-header {
+	position: absolute;
+	top: -50px;
+	right: 30px;
+}
+
+#about img {
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.member {
+    width: 95px;
+    margin-left: -11px;
+}
+.mem-title h2 {
+    font-size: 10px !important;
+}
+    
+  .content-section.team-back p {
+    font-size: 10px;
+}
+.single-featured-item {
+    margin-left: 10px;
+    width: 119px;
+}
+.single-featured-item p {
+    font-size: 11px;
+}
+
+.single-slide-item h2 {
+    font-size: 26px;
+}
+
+.about-section p, .testimoni-content p, .slide-content p {
+    font-size: 13px;
+    line-height: 2;
+}
+.foot-des-loc {
+    width: 108px;
+    font-size: 11px;
+}
+.foot-img-phone {
+    top: 168px;
+}
+.foot-list {
+    display: none;
+}
+.foot-mid p {
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.subscribe {
+    border: 1px solid #ffffff;
+    color: #fff;
+    margin: 0 auto;
+    width: 135px;
+    font-size: 7px;
+}
+.social-links a i {
+    margin-top: 8px;
+}
+.subscribe {
+    width: 135px;
+    font-size: 7px;
+}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}

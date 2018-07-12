@@ -1,0 +1,424 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+}
+html,
+body { height: 100% }
+body {
+    font-family: 'Gentium Book Basic', serif;
+
+}
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.head-area {
+  width: 100%;
+  z-index: 999;
+  position: relative;
+}
+.head-area:after,.logo img,.main-menu ul.nav.navbar-nav li a,.social-links{
+    transition: .4s;
+}
+.is-sticky .head-area:after{
+    position: absolute;
+    background: #000;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.sticky-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.is-sticky .logo img {
+    height: 65px;
+    padding: 10px 0;
+    width: auto;
+}
+.is-sticky .main-menu ul.nav.navbar-nav li a {
+    padding: 22px 15px;
+}
+.is-sticky .social-links {
+    top: 16px;
+}
+
+
+.slide-bg-1{background: url(images/top-area-bg.jpg)}
+.slide-bg-2{background:url(images/top-area-bg-2.jpg)}
+.head-text h2{background: url(images/header-bg.png)}
+
+.top-area {
+    position: relative;
+}
+.top-area-bg {
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.logo img{
+    height: 90px;
+}
+
+.main-menu ul.nav.navbar-nav {
+    float: none;
+    text-align: right;
+}
+.main-menu ul.nav.navbar-nav li {
+    display: inline-block;
+    float: none;
+    position: relative;
+}
+.is-sticky.main-menu ul.nav.navbar-nav li.active::after {
+    background: #f4f5f5 none repeat scroll 0 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.main-menu ul.nav.navbar-nav li.active a{
+    color: #DFB843;
+}
+.main-menu ul.nav.navbar-nav li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 42px 15px;
+}
+.main-menu ul.nav.navbar-nav li a:hover{
+    background: none;
+}
+.main-menu ul.nav.navbar-nav li a:focus {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.header-text-area {
+    position: relative;
+    padding-top: 80px;
+}
+.head-text h2 {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 30px;
+}
+
+.slide-control {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 80px;
+  margin-top: -60px;
+  left: 15px;
+    opacity: .2;
+}
+.slide-control:hover{
+    opacity: 1;
+    color: #fff;
+}
+.slide-control.right {
+  left: auto;
+  right: 20px;
+}
+
+#top-slide-carousel.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .item,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .active,
+#top-slide-carousel.carousel-fade .carousel-inner .next.left,
+#top-slide-carousel.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .next,
+#top-slide-carousel.carousel-fade .carousel-inner .prev,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+#top-slide-carousel.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.btn-filled {
+  color: #fff;
+  display: inline-block;
+  margin: 0 12px;
+  padding: 11px 40px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.btn-filled::after {
+    background: #000000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.btn-filled.change-color:after{background-color: #D6C488}
+.head-text {
+  padding: 100px 0;
+}
+
+.main-menu {
+    padding-right: 95px;
+    position: relative;
+}
+.social-links {
+    position: absolute;
+    right: 17px;
+    top: 40px;
+}
+.social-links a {
+    color: #dfb843;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.section-padding{
+    padding: 65px 0;
+}
+.section-title{
+    background: url(images/sec-header-img.png);
+}
+
+.section-title {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #cc9900;
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+.about-area,.food-menu-area,.contact-area{background: url(images/seigaiha-pattarn.png)}
+.about-text {
+    margin-left: 30px;
+    width: 365px;
+}
+.author-photo {
+  margin-left: 70px;
+  padding: 50px;
+}
+.food-plate {
+  width: 505px;
+}
+.igredients-bg{background: url(images/igredients-bg.jpg)}
+.igredients-area{
+    position: relative;
+}
+
+.paralax-bg {
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.igredients-text {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 21px;
+  padding: 65px;
+  position: relative;
+  width: 523px;
+  z-index: 1;
+}
+.igredients-text::after,.testimonial-list:after{
+    background: #010101 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.63;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.igredients-text img {
+  margin-top: 50px;
+}
+.section-title.white-section-title{
+    background-image: url(images/sec-header-white-img.png);
+    color: #fff;
+}
+.section-title.little-section-title{
+    background-image: url(images/sec-head-little.png);
+    color: #fff;
+}
+.single-food-item {
+  margin-top: 15px;
+}
+.single-food-item h2 {
+    font-size: 20px;
+    background: url(images/menu-border.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    color: #c89f2d;
+    background-position: center bottom;
+    
+}
+.single-food-item span {
+  float: right;
+}
+.single-food-item p {
+    color: #4c4c4c;
+    padding-bottom: 20px;
+}
+.section-title.food-menu-sec-title {
+  padding-top: 20px;
+}
+
+.single-food-item.special {
+    border: 1px solid #d9c078;
+    padding: 10px;
+    position: relative;
+}
+.single-food-item.special::before {
+    background: #d9c17b none repeat scroll 0 0;
+    color: #fff;
+    content: "special";
+    padding: 2px 8px;
+    position: absolute;
+    right: -1px;
+    text-transform: uppercase;
+    top: -25px;
+}
+.testimonial-area{
+    position: relative;
+}
+.testimonial-bg{
+    background-image: url(images/testimonial-bg.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+        
+}
+.testimonial-list{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 65px;
+    font-size: 25px;
+    text-align: center
+}
+.testimonial-list p.testimonial-author{
+    font-size: 18px;
+    padding-top: 30px;
+}
+#testimonial-carousel::before {
+  color: #9c9e9a;
+  content: "\f10d";
+  font-family: FontAwesome;
+  left: -35px;
+  position: absolute;
+  top: -18px;
+}
+
+.contact-form {
+  text-align: left;
+  margin-top: 45px;
+}
+.contact-form input[type="text"],.contact-form input[type="date"],.contact-form select {
+  border: 1px solid #c8c6c6;
+  margin-bottom: 22px;
+  padding: 7px;
+  width: 100%;
+}
+.contact-form label {
+  color: #c9a131;
+}
+.contact-text {
+  width: 392px;
+}
+
+.contact-form button {
+    background: #c9a131 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    display: block;
+    margin: 16px auto;
+    padding: 5px 30px;
+    width: 150px;
+}
+
+.footer-area {
+    background: #191919 none repeat scroll 0 0;
+    color: #fff;
+}
+.footer-widget.section-title{
+    background-image: url(images/sec-head-little.png);
+}
+.footer-widget h2 {
+    font-size: 20px;
+}
+
+.footer-cards {
+    color: #fff;
+    margin-top: 20px;
+}
+.footer-cards i {
+    padding: 0 2px;
+}
+.footer-social-icon a {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 0 3px;
+}
+
