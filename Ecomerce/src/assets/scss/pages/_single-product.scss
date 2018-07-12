@@ -1,0 +1,431 @@
+/* ================ single product page style ================== */
+
+
+.product-details{
+	.breadcumb-content{
+		margin-bottom: 20px;
+		li{
+			display:inline-block;
+			a{
+				display:block;
+				padding-right:10px;
+				text-transform:capitalize;
+				i.fas.fa-angle-right{
+					position:absolute;
+					top:46px;
+					padding-left:2px;
+				}
+			}
+		}
+	}
+	.productInfo-left{
+		.tab-content{
+			.active{
+				background:none;
+			}
+			.product-details-bg{
+				background-size: cover;
+			    background-position: center;
+			    background-color: #ddd;
+			    width: 540px;
+			    height: 600px;
+			    border: 1px solid #ddd;
+			    a{
+			    	i{
+			    		font-size: 30px;
+					    position: absolute;
+					    left: 25px;
+					    top: 10px;
+					    transition: $transition-time;
+					    &:hover{
+					    	color:$special-hover-color;
+					    }
+			    	}
+			    }
+			}
+			.product-bg-1{
+				background-image: url(../img/products/women_product-1.jpg);
+			}
+			.product-bg-2{
+				background-image: url(../img/products/women_product-2.jpg);
+			}
+			.product-bg-3{
+				background-image: url(../img/products/women_product-3.jpg);
+			}
+			.product-bg-4{
+				background-image: url(../img/products/women_product-4.jpg);
+			}
+
+
+			
+		}
+		.nav-tabs{
+			border-bottom:none;
+			margin-top: 20px;
+		}
+		ul.product-menu img{
+			height:100px;
+		}
+	
+	.product-comments{
+		h4.comment-header{
+			    font-size: 22px;
+			    margin-top: 35px;
+			    border-bottom: 1px solid $section-border-color;
+			    padding-bottom: 5px;
+		}
+		.comment-form{
+			label,textarea{
+				width:100%;
+			}
+			textarea{
+				margin-bottom:10px;
+			}
+			a.post-btn{
+				    float: right;
+				    display: block;
+				    padding: 5px 20px;
+				    border: 1px solid #ddd;
+				    color: #fff;
+				    background-color: #000;
+			}
+			.rating-box{
+				h4{
+					float: left;
+				    font-size: 12px;
+				    color: #aaa;
+				    margin-top: 4px;
+				    margin-bottom:0;
+				}
+			    .rating-star{
+			    	float: left;
+    				margin-left: 10px;
+    				a{
+    					color:#aaa;
+    					&:hover{
+    						color:$anchor-hover-color;
+    					}
+    				}
+			    }
+			}
+
+		}
+
+	}
+	.comment-showcase{
+			margin-top: 40px;
+			.single-comment{
+
+				display: flex;
+				padding: 30px 0;
+    			border-bottom: 1px solid $section-border-color;
+				.commentor{
+					flex-basis:20%;
+					img{
+						width: 100px;
+					    height: 100px;
+					    border-radius: 50%;
+					    margin-top: 10px;
+					}
+				}
+				.comments-details{
+				    flex-basis: 80%;
+					padding-left: 10px;
+					h2{
+						font-size: 16px;
+					}
+					span{
+						background: #1bab00;
+					    color: #fff;
+					    font-size: 10px;
+					    padding: 2px 8px;
+					    border-radius: 4px;
+					    margin-left: 5px;
+					    text-transform: uppercase;
+					}
+					p{
+						line-height:25px;
+					}
+					p.commenting-time{
+						color: #bbb;
+    					margin: 0;
+					}
+				}
+			}
+		    
+		}
+		.pagination-box{
+			float:right;
+			margin-top: 15px;
+			.active{
+			   background-color: #fff;
+			}
+			.page-item.active{
+				.page-link{
+				    background-color: #ddd !important;
+					border-radius: 50%;
+
+				}
+			}
+			.page-link{
+				border: none;
+				color:$anchor-text-color;
+			}
+			li{
+				a{
+					&:hover{
+						background-color: #ddd !important;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+	.productInfo-right{
+		.product-info-price{
+			border-bottom:1px solid $section-border-color;
+			margin-bottom:10px;
+			.price-text{
+				font-size:30px;
+				font-weight:700;
+				p{
+					margin-bottom:0px;
+				}
+				span{
+					font-size:14px;
+					font-weight:normal;
+					color:#bdbdbd;
+				}
+				span.offer-tag{
+					background-color:#F44336;
+					color:#fff;
+					padding:0 5px;
+					font-size:12px;
+					text-transform:uppercase;
+				}
+			}
+			.rating-box{
+				.stars-outer {
+				  display: inline-block;
+				  position: relative;
+				  font-family: Font Awesome\ 5 Free;
+				  &:before{
+				  	content: "\f005 \f005 \f005 \f005 \f005";
+				  }
+				}
+
+
+				.stars-inner {
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  white-space: nowrap;
+				  overflow: hidden;
+				  width: 50%;
+				  &:before{
+				  	content: "\f005 \f005 \f005 \f005 \f005";
+				  	color:$anchor-hover-color;
+				  }
+				}
+				p{
+					color:#bdbdbd;
+					margin-bottom:10px;
+				}
+			}
+		}
+		.product-details{
+			.cart-form{
+				a.size-btn{
+					display:inline-block;
+					width:30px;
+					height:30px;
+					border:1px solid #333;
+					text-align:center;
+					line-height:30px;
+					&:hover{
+						background-color:#000;
+						color:#fff;
+					}
+				}
+				label{
+					margin-bottom:20px;
+				}
+				input[type=number]{
+				    width: 90px;
+				    border-color: #333;
+				    padding: 2px 10px;
+				    text-align: center;
+				}
+				a.color-btn{
+					display: inline-block;
+				    width: 20px;
+				    height: 20px;
+				    border-radius: 50%;
+				    margin-left:5px;
+				}
+				.orange{
+					background-color:#dc5a14
+				}
+				.yellow{
+					background-color:#dcd514
+				}
+				.red{
+					background-color:#ee1515
+				}
+				p{
+					margin:0;
+					span.shipping-bg{
+						text-transform: uppercase;
+					    font-size: 12px;
+					    background: green;
+					    color: #fff;
+					    padding: 0 5px;
+					    border-radius: 2px;
+					    margin-left: 5px;
+					}
+				}
+				a.buy-btn{
+				    display: inline-block;
+				    padding: 8px 50px;
+				    background: orange;
+				    text-transform: uppercase;
+				    font-size: 12px;
+				    color: #fff;
+				    margin-top: 25px;
+				    margin-right: 10px;
+				}
+				a.cart-btn{
+					display:inline-block;
+					padding:5px 15px;
+					background-color:#fff;
+					border:1px solid #333;
+					color:#333;
+					text-transform:uppercase;
+					box-shadow: 0px 0px 1px 0px #333;
+				}
+				
+			}
+			.social-links{
+				margin-top: 20px;
+				margin-bottom: 20px;
+				p{
+					color: #aaa;
+					margin-bottom: 5px;
+				}
+				a{
+					display: inline-block;
+				    margin-right: 10px;
+				    font-size: 16px;
+				}
+			}
+			.detail-box{
+				margin-bottom:40px;
+			}
+			.size-details{
+				margin-bottom:40px;
+				.table td, .table th{
+					    border-top: 0px solid #dee2e6;
+				}
+				.info-header{
+					h4{
+						margin-bottom:0;
+					}
+				}
+			}
+			.frequent-question-answer{
+				margin-bottom:40px;
+				h4{
+					font-size:14px;
+				}
+				p{
+					margin-bottom:30px;
+				}
+			}
+			.single-product{
+			    margin-top: 10px;
+				.product-bg{
+					background-size:cover;
+					background-color:#ddd;
+					background-position:center;
+					height:180px;
+					border: 1px solid $section-border-color;
+					position:relative;
+					.product-hover{
+						position: absolute;
+					    bottom: 15px;
+					    right: 5px;
+					    transition:$transition-time;
+					    opacity:0;
+						a{
+							background-color:$button-hover-bg-color !important;
+						}
+					}
+					&:hover{
+						border:1px solid $border-color;
+						.product-hover{
+							opacity:1;
+							bottom:5px;
+						}
+					}
+					a{
+						i.fas{
+							color:#aaa;
+							font-size:20px;
+							right: 5px;
+						    position: absolute;
+						    top: 5px;
+						    transition:.4s;
+						    &:hover{
+						    	color: $special-hover-color;
+						    }
+						}
+						
+					}
+					.price-btn{
+						position:absolute;
+						bottom:5px;
+						left: 5px;
+					}
+					a.site-btn{
+						background-color:#333;
+						color:$button-text-color;
+						padding:4px 13px;
+						font-size: 12px;
+					}
+					a.site-btn.offer{
+						background-color:$special-hover-color;
+						margin-left:-3px;
+					}
+				}
+				.product-text{
+					h4{
+						font-size:16px;
+						maargin-top:10px;
+					}
+					p{
+						color:#aaa;
+					}
+				}
+				.bg-1{
+					background-image: url(../img/products/men_product-1.jpg);
+				}
+				.bg-2{
+					background-image: url(../img/products/men_product-2.jpg);
+				}
+				.bg-3{
+					background-image: url(../img/products/men_product-3.jpg);
+				}
+			}
+			.info-header{
+				h4{
+					font-size: 18px;
+				    border-bottom: 1px solid #bbb;
+				    padding-bottom: 10px;
+				    font-weight: 600;
+				}
+			}
+			
+		}
+	}
+
+}
