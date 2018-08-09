@@ -1,0 +1,107 @@
+/* ===================== 
+
+Testimonial Section Two style 
+
+===================== */
+
+.testimonial-section-one{
+	h2.section-title{
+		text-transform:uppercase;
+		font-size:35px;
+		color:#00A6E3;
+		font-weight:700;
+		&:after{
+			width:50%;
+			height:2px;
+			left:25%;
+			background-color:#00A6E3;
+		}
+		&:before{
+			position: absolute;
+		    height: 4px;
+		    background-color: #00A6E3;
+		    width: 60px;
+		    left: 40%;
+		    content: "";
+		    top: 59px;
+		    margin-left: 20px;
+		}
+	}
+	.team-carousel{
+		.owl-nav{
+			font-size:20px;
+			color:#fff;
+			.owl-prev{
+				position:absolute;
+				height:35px;
+				width:35px;
+				text-align: center;
+				line-height:35px;
+				border-radius:50%;
+				background-color:#00A6E3;
+				left:-60px;
+				top:50%;
+			}
+			.owl-next{
+				position:absolute;
+				height:35px;
+				width:35px;
+				text-align: center;
+				line-height:35px;
+				border-radius:50%;
+				background-color:#00A6E3;
+				left:auto;
+				right:-60px;
+				top:50%;
+			}
+		}
+		.single-team-box{
+			background-color:#fff;
+			padding:20px;
+			margin-top:20px;
+			i.fa{
+				color:#00A6E3;
+			}
+			img{
+				width:100px;
+				height:100px;
+				text-align:center;
+				display:inline-block;
+				border:1px solid #bbb;
+				border-radius:50%;
+			}
+			.team-dec{
+				margin:10px 0;
+				font-size:14px;
+				span{
+					display:inline-block;
+					i.fa-quote-right{
+						position: absolute;
+    					bottom: 85px;
+					}
+					i.fa-quote-left{
+						position: absolute;
+					    left: 28px;
+					    bottom: 140px;
+
+					}
+				}
+			}
+			h4{
+				font-size:18px;
+				color:#00A6E3;
+				margin-bottom:20px;
+				font-weight:700;
+				text-transform:uppercase;
+			}
+			span{
+				display:block;
+				color:#aaa;
+				font-weight:700;
+				font-size:15px;
+				text-transform:capitalize;
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,76 @@
+/* ===================== 
+
+Service Section Two style 
+
+===================== */
+
+.service-section-two{
+	.service-bg-1{
+		background-image:url('../images/service-section-2/bg-1.jpg');
+	}
+	.service-bg-2{
+		background-image:url('../images/service-section-2/bg-2.jpg');
+	}
+	.service-bg-3{
+		background-image:url('../images/service-section-2/bg-3.jpg');
+	}
+	.service-bg-4{
+		background-image:url('../images/service-section-2/bg-4.jpg');
+	}
+	h2.section-title{
+		color:#333;
+		&:after{
+			background-color:#333;
+		}
+	}
+	.single-service-item{
+		background-size:cover;
+		background-color:#ddd;
+		height:200px;
+		text-align:center;
+		color:#fff;
+		margin-top:30px;
+		position:relative;
+		z-index:2;
+		&:after{
+			position:absolute;
+			left:0;
+			top:0;
+			background-color:#333;
+			width:100%;
+			height:100%;
+			opacity:.3;
+			content:"";
+			z-index:-1;
+		}
+		.service-hover{
+			position:absolute;
+			bottom: 10px;
+			width:100%;
+			transition:.3s;
+			h3{
+				font-size:25px;
+			}
+			a.boxed-btn{
+				display:inline-block;
+				padding:10px;
+				background-color:$servie-section-btn-color;
+				color:#333;
+				font-size:16px;
+				text-decoration:none;
+				visibility:hidden;
+				opacity:0;
+				transition:.3s;
+			}
+		}
+		&:hover{
+			a.boxed-btn{
+				visibility:visible;
+				opacity:1;
+			}
+			.service-hover{
+				bottom:30px;
+			}
+		}
+	}
+}

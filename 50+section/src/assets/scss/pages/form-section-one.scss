@@ -1,0 +1,84 @@
+/* ===================== 
+
+Form Section One style 
+
+===================== */
+
+.form-section-one{
+	.form-title{
+		font-size:20px;
+		margin-bottom:50px;
+		line-height:1.8;
+		h2{
+			font-size:35px;
+			color:#6B6B6B;
+		}
+		p{
+			color:#999;
+		}
+	}
+	.contact-us-form{
+		p.contact-title{
+			font-size:18px;
+			color:#6A6A6A;
+		}
+		p.form-element{
+			position:relative;
+			label{
+				position:absolute;
+				font-size:14px;
+				text-transform:uppercase;
+				top: 10px;
+    			left: 11px;
+    			color:#333;
+    			font-weight: 700;
+			}
+			input[type='text'],input[type='email'],textarea{
+				width:100%;
+				padding:10px;
+				border:1px solid #ddd;
+				padding-top:32px;
+				font-size:13px;
+				transition:.3s;
+			}
+		}
+		textarea{
+			max-height:150px;
+		}
+		i.fa-star{
+			color:#EE3131;
+		    position: absolute;
+		    top: 10px;
+		    right: 10px;
+		    font-size: 10px;
+		}
+		i.fa-user{
+			color:#333;
+		    position: absolute;
+		    top: 30px;
+		    right: 12px;
+		    font-size: 10px;
+		}
+	}
+	input[type='submit']{
+		float:right;
+		background:#6D5AB0;
+		color:#fff;
+		padding:10px 20px;
+		border:none;
+		border-radius:5px;
+		cursor: pointer;
+	}
+	.check-box-area{
+		font-size:14px;
+		padding:5px 0;
+		display:block;
+		input[type='checkbox'], p{
+			display:inline;
+		}
+		p{
+			color:#999;
+		}
+	}
+	
+}

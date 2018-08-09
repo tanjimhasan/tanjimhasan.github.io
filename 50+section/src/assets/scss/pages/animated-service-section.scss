@@ -1,0 +1,139 @@
+/* ===================== 
+
+Animated Service Section style 
+
+===================== */
+
+.animated-service{
+	h2.section-title{
+		text-transform:uppercase;
+		font-size:35px;
+		color:#000;
+		font-weight:700;
+		&:after{
+			width:40%;
+			height:3px;
+			left:25%;
+			background-color:#000;
+		}
+	}
+	.single-author{
+
+		.author-image{
+			position:relative;
+			overflow: hidden;
+			img{
+				width:100%;
+			}
+			.author-hover{
+				position:absolute;
+				top:0;
+				color:#555;
+				left:0;
+				height: 100%;
+    			width: 100%;
+				text-align:center;
+				padding-top:140px;
+				z-index:1;
+				visibility:hidden;
+				opacity:0;
+				transition:.3s;
+				h2{
+					font-size:22px;
+					font-weight:400;
+					letter-spacing:2px;
+					text-transform:uppercase;
+					margin-bottom:15px;
+				}
+				&:after{
+					position:absolute;
+					left:0;
+					top:0;
+					width:100%;
+					height:100%;
+					background-color:#ddd;
+					opacity:.8;
+					z-index:-1;
+					content:"";
+				}
+				p{
+					color:#333;
+				}
+				.social-links{
+					a{
+						font-size:16px;
+						color:#929292;
+						padding:3px;
+						display:inline-block;
+					}
+					
+				}
+			}
+
+			.animation-1{
+				left:-100%;
+			}
+			.animation-2{
+				top:-100%;
+			}
+			.animation-3{
+				left:100%;
+			}
+			.animation-4{
+				transform:scale(0);
+			}
+			.animation-5{
+				transform: rotate(360deg);
+				
+			}
+			
+		}
+		h3{
+			text-align:center;
+			font-size:18px;
+			color:#000;
+			font-weight:400;
+			text-transform: uppercase;
+			letter-spacing:5px;
+			margin-bottom:0;
+			margin-top:10px;
+			span{
+				display:block;
+				color:#aaa;
+				margin-top:10px;
+				font-size:70%;
+			}
+		}
+		&:hover{
+			.author-hover{
+				visibility:visible;
+				opacity:1;
+			}
+			.author-hover.animation-1{
+				visibility:visible;
+				opacity:1;
+				left:0;
+			}
+			.author-hover.animation-2{
+				visibility:visible;
+				opacity:1;
+				top:0;
+			}
+			.author-hover.animation-3{
+				visibility:visible;
+				opacity:1;
+				left:0;
+			}
+			.author-hover.animation-4{
+				left: 0;
+			    transform: scale(1,1);
+			    visibility: visible;
+			}
+			.author-hover.animation-5{
+				left: 0;
+			    transform: rotate(0);
+			    visibility: visible;
+			}
+		}
+	}
+}

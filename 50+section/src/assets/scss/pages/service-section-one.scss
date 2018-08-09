@@ -1,0 +1,104 @@
+/* ===================== 
+
+Service Section One style 
+
+===================== */
+
+.section-block{
+	padding:80px 0;
+
+	h2.section-title{
+		font-size:36px;
+		position:relative;
+		color:#56BE75;
+		margin-bottom:40px;
+		&:after{
+			position: absolute;
+		    width: 8%;
+		    height: 4px;
+		    left: 46%;
+		    background-color: #56BE75;
+		    content: "";
+		    top: 60px;
+		}
+	}
+	.single-service-box{
+		color:#333;
+		display:block;
+		text-decoration:none;
+		padding:30px;
+		padding-top:40px;
+		margin-top:50px;
+		background-color:#ddd;
+		&:hover{
+			.hvr-bounce-in{
+				-webkit-transform: scale(1.2);
+  				transform: scale(1.2);
+  				-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  				transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+			}
+		}
+		.service-icon{
+		    position: absolute;
+		    width: 70px;
+		    height: 70px;
+		    font-size: 30px;
+		    background: #56BE75;
+		    border-radius: 50%;
+		    line-height: 2.2;
+		    top: -35px;
+		    left: 50%;
+		    margin-left: -35px;
+		    color: #fff;
+		}
+		.hvr-bounce-in{
+			display: inline-block;
+			 vertical-align: middle;
+			 -webkit-transform: translateZ(0);
+			 transform: translateZ(0);
+			 box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			 -webkit-backface-visibility: hidden;
+			 backface-visibility: hidden;
+			 -moz-osx-font-smoothing: grayscale;
+			 -webkit-transition-duration: 0.5s;
+			 transition-duration: 0.5s;
+		}
+	}
+	.hvr-curl-top-left {
+	  	display: inline-block;
+	  	vertical-align: middle;
+	  	-webkit-transform: translateZ(0);
+	 	transform: translateZ(0);
+	  	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	  	-webkit-backface-visibility: hidden;
+	  	backface-visibility: hidden;
+	  	-moz-osx-font-smoothing: grayscale;
+	  	position: relative;
+	  	&:hover{
+	  		&:before{
+	  			width: 25px;
+  				height: 25px;
+	  		}
+	  	}
+	  	&:before{
+	  		pointer-events: none;
+		  	position: absolute;
+		  	content: '';
+		  	height: 0;
+		  	width: 0;
+		  	top: 0;
+		  	left: 0;
+		  	background: white;
+		  	/* IE9 */
+		  	background: linear-gradient(135deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+		  	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+		  	/*For IE7-8-9*/
+		  	z-index: 1000;
+		  	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+		  	-webkit-transition-duration: 0.3s;
+		  	transition-duration: 0.3s;
+		  	-webkit-transition-property: width, height;
+		  	transition-property: width, height;
+	  	}
+	}
+}
