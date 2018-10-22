@@ -1,0 +1,60 @@
+// Main Sass File
+
+
+@charset 'UTF-8';
+
+//Configuration and helpers
+@import
+'bootstrap/functions',
+'bootstrap/variables',
+'bootstrap/breakpoints',
+
+'fontawesome/fa-brands',
+'fontawesome/fa-regular',
+'fontawesome/fa-solid',
+'fontawesome/fontawesome',
+
+'abstracts/functions',
+'abstracts/variables',
+'abstracts/mixins';
+
+
+//Base stuff
+@import
+'base/general',
+'base/resets',
+'base/typography',
+'base/global',
+'base/fonts',
+'base/helpers';
+
+// Layout-related sections
+@import
+'layout/sticky-header',
+'layout/mobile_menu',
+'layout/header',
+'layout/hero-area',
+'layout/title-block',
+'layout/hero-area-section',
+'layout/about-area',
+'layout/about-area-section',
+'layout/skill-area',
+'layout/portfolio',
+'layout/portfolio-section',
+'layout/news-letter',
+'layout/news-letter-section',
+'layout/footer';
+
+// Components
+@import
+'components/skill-bar',
+'components/mobile-menu-bar',
+'components/scrollToTop',
+'components/button';
+
+// Page-specific styles
+@import
+'pages/home';
+
+
+

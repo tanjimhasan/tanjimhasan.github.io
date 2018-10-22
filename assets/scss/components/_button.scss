@@ -1,0 +1,32 @@
+/* ================ button style ================== */
+
+a.boxed-btn,.bordered-btn{
+	display:inline-block;
+	color:#333;
+	text-decoration:none;
+	background:#fff;
+	padding:6px 35px;
+	border-radius:4px;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:600;
+	transition:.3s;
+	border:1px solid $primary-color;
+	&:hover{
+		background:$primary-color;
+		border:1px solid #fff;
+		color:#fff;
+	}
+}
+
+a.bordered-btn{
+	border:1px solid $primary-color;
+	background:#fff;
+	color:$primary-color;
+	text-decoration:none;
+
+	&:hover{
+		background:$primary-color;
+		color:#fff;
+	}
+}

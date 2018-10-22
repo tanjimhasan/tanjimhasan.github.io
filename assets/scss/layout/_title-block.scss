@@ -1,0 +1,31 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+title-block style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.title-block{
+		font-size:28px;
+		text-transform:uppercase;
+		padding-bottom:20px;
+		margin-bottom:30px;
+		line-height:23px;
+		position:relative;
+		&:after{
+			position:absolute;
+			left:0;
+			bottom:0;
+			width:80px;
+			height:4px;
+			background:$primary-color;
+			content:"";
+		}
+}
+.title-block.theme-2{
+	&:after{
+		left:50%;
+		margin-left:-40px;
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+title-block style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

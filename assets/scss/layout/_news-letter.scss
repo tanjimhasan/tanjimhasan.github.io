@@ -1,0 +1,35 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+news-letter area style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.news-letter-area{
+	
+}
+.news-letter-container{
+	background:$primary-color;
+	padding:20px 10px;
+	margin-bottom: -45px;
+	position:relative;
+	z-index:98;
+	.social-links{
+		margin-top:9px;
+		@include media-breakpoint-between(xs, md) {
+	        margin-top:15px;
+	    }
+		a{
+			background:#fff;
+			color:$primary-color;
+			border-radius:0;
+		}
+	}
+	.social-links.text-right{
+		@include media-breakpoint-between(xs, md) {
+	       text-align:left !important;
+	    }
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+news-letter area style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
