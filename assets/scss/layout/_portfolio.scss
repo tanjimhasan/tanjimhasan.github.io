@@ -5,6 +5,9 @@ portfolio area style start
 .portfolio-list{
 	flex-direction:row;
 	margin-top:-20px;
+	@include media-breakpoint-only(md) {
+       margin-top:-10px;
+    }
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

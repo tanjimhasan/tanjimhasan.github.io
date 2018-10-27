@@ -1,31 +1,18 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-title-block style start 
+title block style start 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
-.title-block{
-		font-size:28px;
-		text-transform:uppercase;
-		padding-bottom:20px;
-		margin-bottom:30px;
-		line-height:23px;
-		position:relative;
-		&:after{
-			position:absolute;
-			left:0;
-			bottom:0;
-			width:80px;
-			height:4px;
-			background:$primary-color;
-			content:"";
-		}
-}
-.title-block.theme-2{
-	&:after{
-		left:50%;
-		margin-left:-40px;
-	}
+.title-text{
+	padding: 8px 35px;
+	color: #fff;
+	border-left: 0;
+	display: inline-block;
+	font-weight: 300;
+	font-size: 28px;
+	padding-top:12px;
+	background: $primary-color;;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-title-block style end 
+title block style end 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

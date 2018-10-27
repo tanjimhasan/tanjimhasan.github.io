@@ -2,22 +2,12 @@
 about area style start 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
-.about-area{
+.about-block{
+	padding-bottom:58px;
+	min-height:76vh;
 	p{
-		@include media-breakpoint-only(md) {
-	       font-size:14px;
-	    }
 		
-	}
-	.about-action{
-		a.boxed-btn, a.bordered-btn{
-			@include media-breakpoint-between(xs, sm) {
-		       font-size:14px;
-		    }
-		   @include media-breakpoint-only(xs) {
-		      padding:6px 12px;
-		    } 
-		}
+		
 	}
 	
 }

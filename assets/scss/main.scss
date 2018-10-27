@@ -30,26 +30,27 @@
 
 // Layout-related sections
 @import
-'layout/sticky-header',
-'layout/mobile_menu',
 'layout/header',
-'layout/hero-area',
 'layout/title-block',
-'layout/hero-area-section',
-'layout/about-area',
-'layout/about-area-section',
-'layout/skill-area',
+'layout/mobile-menu',
+'layout/left-menubar',
+'layout/main-content',
+'layout/section',
+'layout/single-section',
+'layout/resume',
+'layout/resume-section',
 'layout/portfolio',
 'layout/portfolio-section',
-'layout/news-letter',
-'layout/news-letter-section',
+'layout/about-area',
+'layout/about-area-section',
+'layout/home',
+'layout/home-section',
+'layout/offcanvas-shade',
 'layout/footer';
 
 // Components
 @import
 'components/skill-bar',
-'components/mobile-menu-bar',
-'components/scrollToTop',
 'components/button';
 
 // Page-specific styles
