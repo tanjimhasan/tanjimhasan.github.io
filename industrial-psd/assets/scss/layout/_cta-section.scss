@@ -1,0 +1,30 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+cta section style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.cta-area{
+	padding:55px 0;
+	background:$primary-color;
+	P{
+		font-size:22px;
+		color:#fff;
+		margin-bottom:0;
+		margin-top: 4px;
+		@include media-breakpoint-between(md, lg) {
+	        font-size:18px;
+	    }
+	}
+	.cta-btn{
+		background:#ffffff;
+		color:$heading-color;
+		font-size:16px;
+		@include media-breakpoint-between(md, lg) {
+	        font-size:15px;
+	        padding:8px 10px;
+	    }
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+cta section style end 
+=-=-=-=-=-=-=-=-=-=-= */

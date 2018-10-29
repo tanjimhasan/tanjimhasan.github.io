@@ -1,0 +1,44 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+all button style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.btn{
+	color:#fff;
+	border:1px solid $primary-color;
+	background:$primary-color;
+	padding:10px 25px;
+	text-transform:uppercase;
+	transition:$transition-time;
+	&:hover{
+		background:transparent;
+		color:#fff;
+		border-color:#fff;
+	}
+}
+.bordered-btn{
+	background:transparent;
+	border-color:#fff;
+	transition:$transition-time;
+	margin-left:10px;
+	&:hover{
+		background:$primary-color;
+		border-color:$primary-color;
+	}
+}
+
+a.read-more-btn{
+	color:$heading-color;
+	font-weight:700;
+	text-decoration:none;
+	&:hover{
+		color:$primary-color;
+	}
+	i{
+		padding-left:5px;
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+all button style end 
+=-=-=-=-=-=-=-=-=-=-= */

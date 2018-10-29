@@ -1,0 +1,67 @@
+// Main Sass File
+
+
+@charset 'UTF-8';
+
+//Configuration and helpers
+@import
+'bootstrap/functions',
+'bootstrap/variables',
+'bootstrap/breakpoints',
+
+'fontawesome/fa-brands',
+'fontawesome/fa-regular',
+'fontawesome/fa-solid',
+'fontawesome/fontawesome',
+
+'abstracts/functions',
+'abstracts/variables',
+'abstracts/mixins';
+
+
+//Base stuff
+@import
+'base/general',
+'base/resets',
+'base/typography',
+'base/global',
+'base/fonts',
+'base/helpers';
+
+// Layout-related sections
+@import
+'layout/header',
+'layout/title-block',
+'layout/header-top',
+'layout/main-menu',
+'layout/main-header',
+'layout/hero-area',
+'layout/single-hero-slide',
+'layout/service-section',
+'layout/single-service-section',
+'layout/about-section',
+'layout/cta-section',
+'layout/project-section',
+'layout/single-project-item',
+'layout/team-section',
+'layout/single-team',
+'layout/client-carousel',
+'layout/single-client-carousel',
+'layout/logo',
+'layout/site-footer',
+'layout/footer-weidget',
+'layout/copyright-text',
+'layout/footer';
+
+// Components
+@import
+'components/button',
+'components/scrollToTop',
+'components/slick-dots';
+
+// Page-specific styles
+@import
+'pages/home';
+
+
+

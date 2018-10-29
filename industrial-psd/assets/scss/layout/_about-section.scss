@@ -1,0 +1,31 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+about section style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.bordered-bg{
+	position:relative;
+	z-index:2;
+	@include media-breakpoint-between(xs, md) {
+        text-align:center;
+    }
+    img{
+    	
+    }
+	&:before,&:after{
+		position:absolute;
+		left:-4px;
+		top:15%;
+		height:70%;
+		width:4px;
+		background:$primary-color;
+		content:"";
+	}
+	&:after{
+		left:auto;
+		right:-4px;
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+about section style end 
+=-=-=-=-=-=-=-=-=-=-= */

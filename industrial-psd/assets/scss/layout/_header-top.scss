@@ -1,0 +1,66 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+header top style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.header-top{
+	padding:13px 0;
+	background:#0b0b0b;
+	@include media-breakpoint-between(xs, md) {
+        text-align:center;
+    }
+    .text-right{
+    	@include media-breakpoint-between(xs, md) {
+	        text-align:center!important;
+	        margin-top:10px;
+	    }
+    }
+	color:#f5f3f3;
+	i{
+		padding-right:8px;
+		color:$primary-color;
+	}
+	i.fa-phone-volume{
+		margin-left:20px;
+		@include media-breakpoint-only(lg) {
+	        margin-left:15px;
+	    }
+	}
+	
+}
+.social-links{
+	margin-left:20px;
+	@include media-breakpoint-only(lg) {
+        margin-left:15px;
+    }
+	a{
+		display:inline-block;
+		text-decoration:none;
+		height:33px;
+		width:33px;
+		line-height:33px;
+		text-align:center;
+		border-radius:50%;
+		border:1px solid #f5f3f3;
+		margin-left:8px;
+		transition:$transition-time;
+		@include media-breakpoint-only(sm) {
+	        height:25px;
+	        width:25px;
+	        line-height:25px;
+	    }
+		@include media-breakpoint-only(xs) {
+	        display:none;
+	    }
+		&:hover{
+			background:$primary-color;
+			border-color:$primary-color;
+		}
+	}
+	i{
+		color:#f5f3f3;
+		padding:0;
+	}
+}
+/* =-=-=-=-=-=-=-=-=-=-=
+header top style end 
+=-=-=-=-=-=-=-=-=-=-= */

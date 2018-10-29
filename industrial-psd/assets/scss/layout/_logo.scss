@@ -1,0 +1,23 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+logo style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.logo{
+	a{
+		display:inline-block;
+		text-decoration:none;
+		text-transform:uppercase;
+		border:1px solid $heading-color;
+		padding:10px 20px;
+
+	}
+	h2{
+		line-height:20px;
+		font-size:20px;
+		margin-bottom:0;
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+logo style end 
+=-=-=-=-=-=-=-=-=-=-= */

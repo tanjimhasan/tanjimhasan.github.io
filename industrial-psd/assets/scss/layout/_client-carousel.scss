@@ -1,0 +1,22 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+client carouse style start 
+=-=-=-=-=-=-=-=-=-=-= */
+.client-area{
+	
+}
+.client-carousel{
+	border:1px solid $border-color;
+	border-left:0;
+	border-right:0;
+	padding:40px 0;
+	.slick-slide{
+		img{
+			margin:0 auto;
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+client carouse style end 
+=-=-=-=-=-=-=-=-=-=-= */

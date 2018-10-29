@@ -1,0 +1,33 @@
+/* ================ Global setting ================== */
+$sides: (top, bottom, left, right);
+
+
+
+.section-padding{
+	padding:90px 0;
+}
+.padding-bottom-0{
+	padding-bottom:0px;
+}
+
+.gray-bg{
+	background:#f4f4f4;
+}
+
+
+@for $i from 0 through 100 {
+  .pdt-#{$i} {
+    padding-top : #{$i}px;
+  }
+}
+@for $i from 0 through 100 {
+  .mb-#{$i} {
+    margin-bottom : #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .mt-#{$i} {
+    margin-top : #{$i}px;
+  }
+}

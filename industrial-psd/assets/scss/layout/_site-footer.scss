@@ -1,0 +1,29 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+site footer style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.site-footer{
+	background:#000;
+	
+}
+.footer-top{
+	padding:60px 0;
+	.col-md-6{
+		@include media-breakpoint-only(md) {
+	        margin-bottom:25px;
+	        &:nth-child(3),&:nth-child(4){
+	        	margin-bottom:0;
+	        }
+	    }
+	    @include media-breakpoint-between(xs, sm) {
+	        margin-bottom:35px;
+	        &:last-child{
+	        	margin-bottom:0;
+	        }
+	    }
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+site footer style end 
+=-=-=-=-=-=-=-=-=-=-= */

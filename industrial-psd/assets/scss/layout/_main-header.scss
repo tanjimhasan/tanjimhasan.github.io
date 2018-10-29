@@ -1,0 +1,26 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+main header style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.main-header{
+	padding:16px 0;	
+}
+.main-header.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    box-shadow:0 0 10px #aaa;
+    .logo{
+    	margin-bottom:2px;
+    }
+    .main-menu{
+    	margin-top:3px;
+    	
+    }
+}
+/* =-=-=-=-=-=-=-=-=-=-=
+main header style end 
+=-=-=-=-=-=-=-=-=-=-= */
