@@ -7,6 +7,9 @@ title block style start
 		font-size:30px;
 		text-transform:uppercase;
 		margin-bottom:20px;
+		@include media-breakpoint-only(xs) {
+	        font-size:28px;
+	    }
 	}
 }
 

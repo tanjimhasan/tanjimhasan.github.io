@@ -4,9 +4,7 @@ main menu style start
 
 .main-menu{
 	margin-top:2px;
-	@include media-breakpoint-between(xs, md) {
-        display:none;
-    }
+	
 	ul{
 		li{
 			display:inline-block;

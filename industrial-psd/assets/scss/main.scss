@@ -31,6 +31,7 @@
 // Layout-related sections
 @import
 'layout/header',
+'layout/mobile-menu-section',
 'layout/title-block',
 'layout/header-top',
 'layout/main-menu',
@@ -57,6 +58,7 @@
 @import
 'components/button',
 'components/scrollToTop',
+'components/mobile-menu-bar',
 'components/slick-dots';
 
 // Page-specific styles

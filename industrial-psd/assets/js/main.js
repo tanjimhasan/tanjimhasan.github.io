@@ -109,4 +109,25 @@ jQuery(document).ready(function($){
 	        $('html, body').animate({scrollTop : 0},900);
 	        return false;
 	    });
+
+
+	    /*---------------------
+		Mobile Menu
+	------------------------*/
+
+	var mainMenuNav = $('.main-menu nav');
+	mainMenuNav.meanmenu({
+		meanScreenWidth: '991',
+		meanMenuContainer: '.mobile-menu',
+		onePage: true,
+		meanMenuClose: '<span class="menu-close"></span>',
+		meanMenuOpen: '<span class="menu-bar"></span>',
+		meanRevealPosition: 'right',
+		meanMenuCloseSize: '0',
+	});
+
+	$('.main-menu li a').click(function(){
+		$('.main-menu li a').removeClass('active');
+		$(this).addClass('active');
+	});
 });

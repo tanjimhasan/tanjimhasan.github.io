@@ -8,6 +8,9 @@ header top style start
 	@include media-breakpoint-between(xs, md) {
         text-align:center;
     }
+    @include media-breakpoint-only(xs) {
+        font-size:13.5px;
+    }
     .text-right{
     	@include media-breakpoint-between(xs, md) {
 	        text-align:center!important;
@@ -18,11 +21,17 @@ header top style start
 	i{
 		padding-right:8px;
 		color:$primary-color;
+		@include media-breakpoint-only(xs) {
+	        padding-right:5px;
+	    }
 	}
 	i.fa-phone-volume{
 		margin-left:20px;
 		@include media-breakpoint-only(lg) {
 	        margin-left:15px;
+	    }
+	    @include media-breakpoint-only(xs) {
+	        margin-left:6px;
 	    }
 	}
 	
@@ -31,6 +40,9 @@ header top style start
 	margin-left:20px;
 	@include media-breakpoint-only(lg) {
         margin-left:15px;
+    }
+    @include media-breakpoint-only(xs) {
+        margin-left:0;
     }
 	a{
 		display:inline-block;

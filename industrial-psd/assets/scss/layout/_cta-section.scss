@@ -5,6 +5,14 @@ cta section style start
 .cta-area{
 	padding:55px 0;
 	background:$primary-color;
+	@include media-breakpoint-between(xs, md) {
+        text-align:center;
+    }
+    .text-right{
+    	@include media-breakpoint-between(xs, md) {
+	        text-align:center !important;
+	    }
+    }
 	P{
 		font-size:22px;
 		color:#fff;
@@ -12,6 +20,9 @@ cta section style start
 		margin-top: 4px;
 		@include media-breakpoint-between(md, lg) {
 	        font-size:18px;
+	    }
+		@include media-breakpoint-between(xs, sm) {
+	        font-size:16px;
 	    }
 	}
 	.cta-btn{
@@ -21,6 +32,9 @@ cta section style start
 		@include media-breakpoint-between(md, lg) {
 	        font-size:15px;
 	        padding:8px 10px;
+	    }
+	    @include media-breakpoint-between(xs, md) {
+	        margin-top:20px;
 	    }
 	}
 }

@@ -4,6 +4,9 @@ project section style start
 
 .boxed-project-item{
 	margin-bottom:-60px;
+	@include media-breakpoint-only(xs) {
+        margin-bottom:-40px;
+    }
 }
 
 
