@@ -3762,6 +3762,8 @@ main menu style start
       border: 1px solid #fff; }
       .main-menu ul li a:hover {
         border-color: #fc721e; }
+    .main-menu ul li a.active {
+      border-color: #fc721e; }
     @media (min-width: 992px) and (max-width: 1199.98px) {
       .main-menu ul li {
         margin-left: 0; } }

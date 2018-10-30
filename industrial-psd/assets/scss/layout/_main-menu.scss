@@ -20,6 +20,9 @@ main menu style start
 					border-color:$primary-color;
 				}
 			}
+			a.active{
+				border-color:$primary-color;
+			}
 			margin-left:6px;
 			@include media-breakpoint-only(lg) {
 		        margin-left:0;
