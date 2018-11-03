@@ -1,0 +1,51 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+client testimonial start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.client-testimonial{
+	padding-bottom:45px;
+	.slick-arrow{
+		background:#fff;
+		color:$heading-color;
+		top:auto;
+		bottom:45px;
+		left:48%;
+		height:0;
+		width:0;
+		@include media-breakpoint-only(xs) {
+	       left:40%;
+	    }
+	}
+	.slick-arrow.slick-next-btn{
+		right:auto;
+		left:52%;
+		z-index:98;
+		color:$primary-color;
+		@include media-breakpoint-only(xs) {
+	       left:45%;
+	    }
+
+	}
+	.seperator{
+		&:after{
+			left: -22px;
+			top: 35px;
+			transform:rotate(30deg);
+			@include media-breakpoint-only(md) {
+		        left: -15px;	    
+		    }
+			@include media-breakpoint-only(sm) {
+		        left: -10px;	    
+		    }
+			@include media-breakpoint-only(xs) {
+		        display:none;	    
+		    }
+		}
+    
+
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+client testimonial end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

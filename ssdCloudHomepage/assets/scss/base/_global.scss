@@ -1,0 +1,51 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+global style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.section-padding{
+	padding:60px 0;
+}
+.lg-ml-45{
+  @include media-breakpoint-between(lg, xl) {
+         margin-left:45px;
+    }
+}
+.lg-ml-0{
+  @include media-breakpoint-only(lg) {
+         margin-left:0;
+    }
+}
+
+.medium-mb-20{
+	@include media-breakpoint-only(md) {
+        margin-bottom:20px;	    
+    }
+}
+.section-overlay{
+	position:relative;
+	z-index:2;
+	&:after{
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background:#000;
+		opacity:.9;
+		z-index:-1;
+		content:"";
+	}
+}
+.gray-bg{
+	background:#f9f9f9;
+}
+
+
+@mixin transition {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+/* =-=-=-=-=-=-=-=-=-=-=
+global style end 
+=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,36 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+subscription form style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.subcription-form{
+	margin-bottom: 28px;
+    margin-top: 18px;
+	.input-ground{
+		height:40px;
+		padding:3px;
+		background:#fff;
+		.input-group-append{
+			height:34px;
+			margin-left:0;
+		}
+		input{
+			
+			border:0;
+		}
+		input[type=email]{
+			width:66%;
+			padding:4px 15px;
+		}
+		input[type=submit]{
+			width:34%;
+			background:$primary-color;
+			color:#fff;
+			font-weight:600;
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+subscription form style end 
+=-=-=-=-=-=-=-=-=-=-= */

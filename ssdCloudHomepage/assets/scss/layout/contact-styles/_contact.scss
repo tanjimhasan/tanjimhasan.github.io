@@ -1,0 +1,23 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+contact start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.contact-area{
+	
+	.contact-area-wrapper{
+		padding:40px 65px;
+		justify-content:space-between;
+		background:$primary-color;
+		@include media-breakpoint-between(xs, sm) {
+	       flex-direction:column;
+	    }
+		@include media-breakpoint-only(xs) {
+	        padding:40px 20px;
+	    }
+	}
+	
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+contact end 
+=-=-=-=-=-=-=-=-=-=-= */

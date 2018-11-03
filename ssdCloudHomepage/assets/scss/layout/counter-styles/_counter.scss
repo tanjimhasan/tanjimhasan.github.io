@@ -1,0 +1,23 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+counter style start 
+=-=-=-=-=-=-=-=-=-=-= */
+.boxed-counter{
+	margin:-20px 0;
+}
+.counter-area{
+	background:#000;
+	@include media-breakpoint-between(xs, md) {
+		text-align:center;  
+    }
+    .counter-list{
+    	justify-content:space-between;
+    	@include media-breakpoint-between(xs, sm) {
+	         justify-content:center;
+	         flex-direction: column;	    
+	    }
+    }
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+counter style end 
+=-=-=-=-=-=-=-=-=-=-= */

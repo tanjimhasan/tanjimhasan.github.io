@@ -1,0 +1,33 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+bordered icon start 
+=-=-=-=-=-=-=-=-=-=-= */
+.bordered-icon{
+	height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    border:2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    i{
+    	width: 45px;
+	    height: 45px;
+	    background: $primary-color;
+	    line-height: 45px;
+	    border-radius: 50%;
+	    color: #fff;
+	    transition:.4s;
+	    font-size:18px;
+    }
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+bordered icon end 
+=-=-=-=-=-=-=-=-=-=-= */

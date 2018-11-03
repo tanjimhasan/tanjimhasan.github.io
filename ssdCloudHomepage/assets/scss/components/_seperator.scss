@@ -1,0 +1,24 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+seperator start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.seperator{
+	margin-left:18px;
+	margin-right:22px;
+	position:relative;
+	&:after{
+		position:absolute;
+		left:0;
+		top:50%;
+		width:1px;
+		height:30px;
+		margin-top:-15px;
+		background:#333333;
+		content:"";
+	}
+
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+seperator end 
+=-=-=-=-=-=-=-=-=-=-= */

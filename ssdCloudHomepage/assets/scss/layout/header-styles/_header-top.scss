@@ -1,0 +1,51 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+header top start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.header-top{
+	background:#151414;
+	color:#aaaaaa;
+	padding:15px 0;
+	@include media-breakpoint-between(xs, sm) {
+       text-align:center;
+    }
+    .text-right{
+    	@include media-breakpoint-between(xs, sm) {
+	       text-align:center !important;
+	    }
+    }
+	.social-icons{
+		@include media-breakpoint-between(xs, sm) {
+	       margin-bottom:8px;
+	       display:inline-block;
+	    }
+		a{
+			margin-left:10px;
+			color:#aaaaaa;
+			@include transition;
+			&:first-child{
+				margin-left:15px;
+			}
+			&:hover{
+				color:$primary-color;
+			}
+			i{
+				padding:0;
+			}
+		}
+	}
+	i{
+		padding-right:5px;
+	}
+	.contact-details{
+		@include media-breakpoint-only(xs) {
+	        display:none;	    
+	    }
+	}
+	
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+header top end 
+=-=-=-=-=-=-=-=-=-=-= */

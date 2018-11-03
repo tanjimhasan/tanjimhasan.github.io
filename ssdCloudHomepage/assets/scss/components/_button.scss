@@ -1,0 +1,31 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+button start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.btn{
+	background:$primary-color;
+	color:#ffffff;
+	padding:6px 30px;
+}
+.boxed-btn{
+	border:1px solid $primary-color;
+	transition:$transition-time;
+	i{
+		padding-left:10px;
+	}
+	&:hover{
+		border-color: $primary-color;
+		background:#fff;
+		color:$primary-color;
+	}
+}
+a.more-btn{
+	color:$primary-color;
+	text-decoration:none;
+	i{
+		padding-left:6px;
+	}
+}
+/* =-=-=-=-=-=-=-=-=-=-=
+button end 
+=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,25 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+copyright-text style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.copyright-text{
+	border-top:1px solid #555555;
+	padding:30px 0;
+	color:#999999;
+	font-size:15px;
+	font-family: 'Merriweather', serif;
+	@include media-breakpoint-between(xs, sm) {
+         font-size:14px;
+    }
+	span{
+		color:$primary-color;
+	}
+	i{
+		color:$primary-color;
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+copyright-text style end 
+=-=-=-=-=-=-=-=-=-=-= */

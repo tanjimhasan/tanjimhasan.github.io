@@ -1,0 +1,30 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+domail search from start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.domain-search-container{
+	background-size:cover;
+	background-position:center;
+	background-color:#ddd;
+	.title-block{
+		margin-bottom:35px;
+		h2{
+			color:#fff;
+			font-size:36px;
+			@include media-breakpoint-only(xs) {
+		        font-size:28px;
+		    }
+		}
+		p{
+			color:#fff;
+		}
+	}
+
+}
+.domain-section-bg{
+	background-image:url('../images/section-bg-1.jpg');
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+domail search from end 
+=-=-=-=-=-=-=-=-=-=-= */

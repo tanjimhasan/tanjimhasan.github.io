@@ -1,0 +1,33 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+slick arrow start 
+=-=-=-=-=-=-=-=-=-=-= */
+.slick-arrow{
+	height:70px;
+	background:$primary-color;
+	font-size:20px;
+    background: #119ee6;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top:-35px;
+    width: 30px;
+    line-height:70px;
+    text-align:center;
+    color:#fff;
+    @include media-breakpoint-only(xs) {
+         width: 22px;
+    }
+}
+.slick-arrow.slick-next-btn{
+    left:auto;
+    right:0;
+}
+.slick-arrow.slick-prev-btn{
+	z-index:98;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+slick arrow end 
+=-=-=-=-=-=-=-=-=-=-= */

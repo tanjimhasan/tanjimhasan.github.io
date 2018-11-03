@@ -1,0 +1,42 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+contact section start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.contact-info{
+	position:relative;
+	color:#fff;
+	padding-left:50px;
+	font-weight:500;
+	font-size:24px;
+	line-height:35px;
+	margin-bottom:0;
+	@include media-breakpoint-only(md) {
+       padding-left:30px;
+       font-size:17px;
+       line-height:28px;
+    }
+	@include media-breakpoint-between(xs, sm) {
+       margin-bottom:15px;
+       flex-basis:100%;
+    }
+	i{
+		position:absolute;
+		left:0;
+		top:0;
+		font-size:35px;
+		@include media-breakpoint-only(md) {
+	       font-size:24px;
+	    }
+	}
+	span{
+		display:block;
+		font-family: 'Roboto', sans-serif;
+		font-size:14px;
+		font-weight:300;
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+contact section end 
+=-=-=-=-=-=-=-=-=-=-= */

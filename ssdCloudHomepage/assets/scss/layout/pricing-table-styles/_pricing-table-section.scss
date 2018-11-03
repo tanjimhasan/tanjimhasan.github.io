@@ -1,0 +1,139 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+pricing table section start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.single-pricing-table{
+	margin:30px 0;
+	box-shadow:0 0 15px #f0f0f0;
+	background:#fff;
+	border-radius:4px;
+	.pricing-table-head{
+		background:#000000;
+		padding-top:18px;
+		padding-bottom:31px;
+		border-top-left-radius: 4px;
+	    border-top-right-radius: 4px;
+		h5{
+			color:#fff;
+
+		}
+		p{
+			color:#fff;
+			margin-bottom:0;
+			line-height:20px;
+			font-style:italic;
+			font-size:12px;
+			span{
+				display:block;
+				font-size:200%;
+				font-weight:900;
+				font-style:normal;
+			}
+		}
+	}
+	.table-list{
+		padding-top:20px;
+		padding-bottom:35px;
+		.boxed-btn{
+			margin-top:25px;
+		}
+	}
+	.pricing-icon{
+		width: 100px;
+	    height: 50px;
+	    background-color: #000;
+	    border-top-left-radius: 110px;
+	    border-top-right-radius: 110px;
+	    border: 10px solid #fff;
+	    border-bottom: 0;
+	    transform: rotate(180deg);
+	    margin:0 auto;
+	    &:after{
+	    	position: absolute;
+		    left: 10px;
+		    bottom: 3px;
+		    width: 60px;
+		    height: 30px;
+		    background-color: #000;
+		    border-top-left-radius: 110px;
+		    border-top-right-radius: 110px;
+		    border: 1px solid #fff;
+		    border-bottom: 0;
+		    content: "";
+		    z-index: -1;
+	    }
+		i{
+			color:#fff;
+			font-size:20px;
+			line-height:80px;
+			-webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+		}
+	}
+	.table-list{
+		ul{
+			li{
+				color:#999999;
+				margin-bottom:6px;
+				&:last-child{
+					margin-bottom:0;
+				}
+				i{
+					margin-right:6px;
+				}
+				i.fa-check-square{
+					color:$primary-color;
+				}
+			}
+		}
+	}
+}
+.single-pricing-table.active{
+	overflow:hidden;
+	.pricing-table-head{
+		background:$primary-color;
+		position:relative;
+		&:after{
+			content: "Recomended";
+		    position: absolute;
+		    left: -38px;
+		    top: 22px;
+		    background: #fff;
+		    color: $primary-color;
+		    font-family: 'Merriweather', serif;
+		    font-weight:800;
+		    font-size: 13px;
+		    padding: 3px 36px;
+		    transform: rotate(-45deg);
+		    text-transform: capitalize;
+		}
+	}
+	.pricing-icon{
+		background-color:$primary-color;
+		&:after{
+			background-color:$primary-color;
+		}
+	}
+	.table-list{
+		.boxed-btn{
+			background:#000;
+			border-color:#000;
+			@include transition;
+			&:hover{
+				background:#fff;
+				border-color:#000;
+				color:#000;
+			}
+		}
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+pricing table section end 
+
+
+
+
+		
+=-=-=-=-=-=-=-=-=-=-= */

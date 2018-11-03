@@ -1,0 +1,76 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+footer weidget style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.footer-weidget{
+	margin:20px 0;
+	ul{
+		li{
+			display:block;
+			margin-bottom:8px;
+			&:last-child{
+				margin-bottom:0;
+			}
+			a{
+				text-decoration:none;
+				color:#999999;
+				@include transition;
+				&:hover{
+					color:$primary-color;
+					i{
+						color:$primary-color;
+					}
+				}
+				i{
+					margin-right:5px;
+					color:#fff;
+				}
+			}
+		}
+	}
+	.footer-title{
+		margin-bottom:30px;
+		h3{
+			font-size:18px;
+			color:#fff;
+		}
+	}
+	p{
+		color:#999999;
+		margin-bottom:12px;
+	}
+	.more-btn{
+		display:inline-block;
+		color:#cccccc;
+		margin-bottom:16px;
+		&:hover{
+			color:$primary-color;
+		}
+	}
+	.social-icons{
+		color:#999999;
+		a{
+			color:#999999;
+			margin-left:8px;
+			@include transition;
+			&:first-child{
+				margin-left:12px;
+			}
+			&:hover{
+				color:$primary-color;
+			}
+		}
+	}
+	.payment-method{
+		h5{
+			color:#cccccc;
+			font-size:14px;
+			margin-bottom:22px;
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+footer weidget style end 
+=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,93 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+counter section style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.single-count-item{
+	position:relative;
+	z-index:2;
+	margin:20px 0;
+	h3{
+		color:#fff;
+		font-size:18px;
+		font-weight:400;
+		margin-bottom:0;
+		line-height:36px;
+	}
+	p{
+		margin-bottom:0;
+		font-size:40px;
+		line-height:46px;
+		color:#fff;
+		font-weight:500;
+	}
+	&:after{
+		position: absolute;
+	    top: -24px;
+	    font-size: 50px;
+	    font-family: "Font Awesome 5 Free";
+	    font-weight: 900;
+	    content: "\f1fa";
+	    opacity: .5;
+	    z-index: -1;
+	    left: 0;
+	     @include media-breakpoint-only(xs) {
+			left: 44%;
+	    }
+	     @include media-breakpoint-only(sm) {
+			left: 45%;
+	    }
+	    @include media-breakpoint-only(md) {
+	         left: 0;	    
+	    }
+	}
+	&:before{
+		position: absolute;
+	    right: -44%;
+	    top: 0;
+	    width: 2px;
+	    height: 100%;
+	    background: $primary-color;
+	    opacity:.4;
+	    content: "";
+	    transform: rotate(25deg);
+	    @include media-breakpoint-only(md) {
+	         right: -15%;	    
+	    }
+	    
+	}
+	@include media-breakpoint-between(xs, sm) {
+         flex-basis:100%;	    
+    }
+    @include media-breakpoint-between(md, xl) {
+        &:last-child{
+			&:before{
+				display:none;
+			}
+		}   
+    }
+	@include media-breakpoint-between(xs, sm) {
+		&:before{
+			display:none;
+		}   
+    }
+	
+}
+.single-count-item.smiely{
+	&:after{
+		content:"\f118";
+	}
+}
+.single-count-item.project{
+	&:after{
+		content:"\f15b";
+	}
+}
+.single-count-item.award{
+	&:after{
+		content:"\f091";
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+counter section style end 
+=-=-=-=-=-=-=-=-=-=-= */

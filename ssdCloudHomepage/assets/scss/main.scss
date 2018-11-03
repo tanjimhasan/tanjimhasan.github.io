@@ -1,0 +1,78 @@
+// Main Sass File
+
+
+@charset 'UTF-8';
+
+//Configuration and helpers
+@import
+'bootstrap/functions',
+'bootstrap/variables',
+'bootstrap/breakpoints',
+
+'fontawesome/fa-brands',
+'fontawesome/fa-regular',
+'fontawesome/fa-solid',
+'fontawesome/fontawesome',
+
+'abstracts/functions',
+'abstracts/variables',
+'abstracts/mixins';
+
+
+//Base stuff
+@import
+'base/general',
+'base/resets',
+'base/typography',
+'base/global',
+'base/fonts',
+'base/helpers';
+
+// Layout-related sections
+@import
+'layout/title-block',
+'layout/mobile-menu-section',
+'layout/header-styles/header-top',
+'layout/header-styles/header-bottom',
+'layout/slider-style/homepage-slider',
+'layout/slider-style/single-sldier-item',
+'layout/service-styles/service',
+'layout/service-styles/service-section',
+'layout/domain-search-styles/domain-search-form',
+'layout/domain-search-styles/domain-search-form-section',
+'layout/contact-styles/contact',
+'layout/contact-styles/contact-section',
+'layout/feature-section-styles/feature',
+'layout/feature-section-styles/feature-section',
+'layout/pricing-table-styles/pricing-table',
+'layout/pricing-table-styles/pricing-table-section',
+'layout/counter-styles/counter',
+'layout/counter-styles/counter-section',
+'layout/offer-area-styles/offer',
+'layout/offer-area-styles/offer-section',
+'layout/why-choose-us-styles/why-choose-us',
+'layout/why-choose-us-styles/why-choose-us-section',
+'layout/client-testimonial/client-testimonial',
+'layout/client-testimonial/client-testimonial-section',
+'layout/footer-styles/site-footer',
+'layout/footer-styles/footer-top',
+'layout/footer-styles/footer-weidget',
+'layout/footer-styles/subscription-form',
+'layout/footer-styles/copyright-text';
+
+// Components
+@import
+'components/seperator',
+'components/slick-arrow',
+'components/mobile-menu-bar',
+'components/bordered-icon',
+'components/tooltipPopUp',
+'components/scrollToTop',
+'components/button';
+
+// Page-specific styles
+@import
+'pages/home';
+
+
+

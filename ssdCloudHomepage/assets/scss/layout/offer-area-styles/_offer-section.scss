@@ -1,0 +1,160 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+offer area section start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.offered-product-menu{
+	margin-bottom:90px;
+	ul{
+		justify-content:center;
+		li{
+			position:relative;
+			border-top:1px solid #ddd;
+			border-right:1px solid #ddd;
+			border-bottom:1px solid #ddd;
+			&:first-child{
+				border-left:1px solid #ddd;
+			}
+			&:hover{
+				.popup{
+					opacity:1;
+					visibility:visible;
+					top:-38px;
+				}
+			}
+			a{
+				flex-direction:row;
+				align-items:center;
+				justify-content:center;
+				height:65px;
+				width:100px;
+				text-decoration:none;
+				color:#999999;
+				position:relative;
+				@include media-breakpoint-only(sm) {
+			       width:90px;
+			       height:60px;
+			    }
+				@include media-breakpoint-only(xs) {
+			       width:50px;
+			       height:40px;
+			    }
+				i{
+					font-size:22px;
+					@include media-breakpoint-only(xs) {
+				       font-size:18px;
+				    }
+				}
+				&:after{
+					position:absolute;
+					left:0;
+					bottom:0;
+					width:100%;
+					height:2px;
+					background:$primary-color;
+					content:"";
+					opacity:0;
+					@include transition;
+				}
+				&:before{
+					position: absolute;
+				    width: 0;
+				    height: 0;
+				    border-left: 8px solid transparent;
+				    border-right: 8px solid transparent;
+				    border-top: 8px solid $primary-color;
+				    bottom: -6px;
+				    left: 50%;
+				    margin-left: -8px;
+				    content: "";
+				    @include transition;
+				    opacity:0;
+					visibility:hidden;
+				}
+				&:hover{
+					&:after{
+						opacity:1;
+						visibility:visible;
+					}
+					&:before{
+						opacity:1;
+						visibility:visible;
+					}
+				}
+			}
+			a.active{
+				&:after{
+					opacity:1;
+					visibility:visible;
+				}
+				&:before{
+					opacity:1;
+					visibility:visible;
+				}
+			}
+		}
+	}
+	.nav-tabs{
+		border-bottom:0;
+	}
+}
+
+.offer-details{
+	padding:70px 80px;
+	background:#fff;
+	box-shadow:0 0 10px #e0e0e0;
+	@include media-breakpoint-between(xs, sm) {
+       padding:35px 30px;
+    }
+	.product-detail-text{
+		h4{
+			font-size:24px;
+			font-weight:900;
+			color:#000;
+			margin-bottom:28px;
+		}
+		P{
+			line-height:2;
+		}
+		.inner-text{
+			font-style: italic;
+			padding-left:20px;
+			opacity:.7;
+			margin-top:15px;
+			position:relative;
+			&:after{
+				position:absolute;
+				left:0;
+				top:10%;
+				width:2px;
+				height:80%;
+				background:#ddd;
+				content:"";
+			}
+		}
+		.more-btn{
+			font-size:16px;
+			font-family: 'Merriweather', serif;
+			color:$text-color;
+
+			&:hover{
+				color:$primary-color;
+			}
+		}
+		
+	}
+	.product-img{
+		@include media-breakpoint-between(xs, md) {
+	       text-align:center;
+	    }
+		img{
+			@include media-breakpoint-between(xs, md) {
+		       margin-top:20px
+		    }
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+offer area section end 
+=-=-=-=-=-=-=-=-=-=-= */
