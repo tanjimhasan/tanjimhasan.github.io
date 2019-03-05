@@ -2990,13 +2990,17 @@ resume section style start
     line-height: 22px;
     color: #333;
     margin-bottom: 10px; }
-    .resume-timeline .event-name span {
+    .resume-timeline .event-name a {
       display: block;
       color: #7a7d82;
+      text-decoration: none;
       font-family: 'Lato', sans-serif;
       font-size: 70%;
       font-weight: 700;
       opacity: .8; }
+    .resume-timeline .event-name a:hover{
+      color: #6ab04c;
+    }
   .resume-timeline p {
     font-size: 15px; }
 
