@@ -7,8 +7,8 @@ import { useGsapScrollTrigger } from "@/hooks/useGsapScrollTrigger";
 import { PERSONAL } from "@/lib/constants";
 
 const stats = [
-  { icon: <Briefcase size={20} />, value: "5+", label: "Years Experience" },
-  { icon: <FolderOpen size={20} />, value: "10+", label: "Projects" },
+  { icon: <Briefcase size={20} />, value: "6+", label: "Years Experience" },
+  { icon: <FolderOpen size={20} />, value: "6+", label: "Projects" },
   { icon: <Award size={20} />, value: "Lead", label: "Engineer" },
 ];
 
@@ -43,7 +43,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-gradient-start to-gradient-end opacity-20 blur-lg" />
               <Image
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 alt={PERSONAL.name}
                 width={350}
                 height={350}

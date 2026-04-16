@@ -76,7 +76,7 @@ export default function Resume() {
           <h3 className="mb-8 text-center font-display text-xl font-semibold text-text-primary">
             Skills & Abilities
           </h3>
-          <div ref={skillsRef} className="space-y-6">
+          <div ref={skillsRef} className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {skills.map((group) => (
               <div key={group.category}>
                 <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-text-muted">

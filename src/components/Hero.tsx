@@ -99,13 +99,13 @@ export default function Hero() {
         </p>
         <p
           data-hero-summary
-          className="mx-auto mt-6 max-w-xl text-text-secondary"
+          className="mx-auto mt-6 max-w-xxl text-text-secondary"
         >
           {PERSONAL.summary}
         </p>
 
         <div data-hero-ctas className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a
+          {/* <a
             href="#portfolio"
             onClick={(e) => {
               e.preventDefault();
@@ -114,7 +114,7 @@ export default function Hero() {
             className="rounded-full bg-gradient-to-r from-gradient-start to-gradient-end px-8 py-3 font-medium text-white transition-shadow hover:shadow-lg hover:shadow-accent/25"
           >
             View My Work
-          </a>
+          </a> */}
           <a
             href="#contact"
             onClick={(e) => {

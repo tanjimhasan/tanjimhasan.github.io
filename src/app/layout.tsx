@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Tanjim Hasan — Software Engineer, Frontend",
   description:
-    "Frontend engineer with hands-on experience in React, JavaScript, TypeScript and WordPress, focused on building intuitive, high-performance user interfaces.",
+    "Frontend Engineer with 6+ years of experience building scalable, high- performance web applications using React, TypeScript, and WordPress.Proven track record of delivering complex UI systems, optimizing performance, and leading frontend development for SaaS products.Passionate about creating intuitive user experiences and maintainable architectures.",
   keywords: [
     "Frontend Developer",
     "React",

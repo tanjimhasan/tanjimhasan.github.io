@@ -2,7 +2,7 @@ export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Resume", href: "#resume" },
-  { label: "Portfolio", href: "#portfolio" },
+  // { label: "Portfolio", href: "#portfolio" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
@@ -35,7 +35,7 @@ export const PERSONAL = {
   name: "Tanjim Hasan",
   role: "Software Engineer — Frontend",
   summary:
-    "Frontend engineer with hands-on experience in React, JavaScript, TypeScript and WordPress, focused on building intuitive, high-performance user interfaces. Passionate about improving user experience and delivering efficient, scalable frontend solutions.",
+    "Frontend Engineer with 6+ years of experience building scalable, high- performance web applications using React, TypeScript, and WordPress.Proven track record of delivering complex UI systems, optimizing performance, and leading frontend development for SaaS products.Passionate about creating intuitive user experiences and maintainable architectures.",
 } as const;
 
 export const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
