@@ -18,9 +18,16 @@ export default function Contact() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const leftRef = useGsapScrollTrigger<HTMLDivElement>({ direction: "left" });
   const rightRef = useGsapScrollTrigger<HTMLDivElement>({ direction: "right" });
+  const isFormConfigured = Boolean(FORMSPREE_ENDPOINT);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!isFormConfigured) {
+      setStatus("error");
+      return;
+    }
+
     setStatus("loading");
 
     try {
@@ -120,7 +127,7 @@ export default function Contact() {
               />
               <button
                 type="submit"
-                disabled={status === "loading"}
+                disabled={status === "loading" || !isFormConfigured}
                 className="flex items-center gap-2 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end px-8 py-3 font-medium text-white transition-shadow hover:shadow-lg hover:shadow-accent/25 disabled:opacity-50"
               >
                 {status === "loading" ? (
@@ -135,6 +142,12 @@ export default function Contact() {
                   </>
                 )}
               </button>
+
+              {!isFormConfigured && (
+                <p className="text-sm text-amber-400">
+                  Contact form is not configured yet. Add <code>NEXT_PUBLIC_FORMSPREE_ENDPOINT</code> to enable submissions.
+                </p>
+              )}
 
               {status === "success" && (
                 <p className="text-sm text-green-400">
