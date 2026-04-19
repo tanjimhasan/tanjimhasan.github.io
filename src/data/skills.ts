@@ -10,7 +10,7 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Frameworks & Libraries",
-    items: ["React", "Next.js", "Node.js", "WordPress", "Gutenberg"],
+    items: ["React", "Next.js", "Node.js", "WordPress", "Gutenberg", "PostgreSQL", "MongoDB"],
   },
   {
     category: "Styling",
@@ -23,5 +23,9 @@ export const skills: SkillCategory[] = [
   {
     category: "APIs & Auth",
     items: ["REST API", "JWT Authentication"],
+  },
+  {
+    category: "Other",
+    items: ["React Query", "Redux", "Prisma", "ChatGPT", "Cursor", "Claude", "Codex"],
   },
 ];

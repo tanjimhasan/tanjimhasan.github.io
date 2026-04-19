@@ -8,7 +8,7 @@ import { PERSONAL } from "@/lib/constants";
 
 const stats = [
   { icon: <Briefcase size={20} />, value: "6+", label: "Years Experience" },
-  { icon: <FolderOpen size={20} />, value: "6+", label: "Projects" },
+  { icon: <FolderOpen size={20} />, value: "15+", label: "Projects" },
   { icon: <Award size={20} />, value: "Lead", label: "Engineer" },
 ];
 
@@ -17,9 +17,14 @@ const techStack = [
   "Next.js",
   "TypeScript",
   "JavaScript",
+  "React Query",
+  "Redux",
+  "ContextAPI",
   "Tailwind CSS",
   "WordPress",
   "Node.js",
+  "PostgreSQL",
+  "MongoDB",
   "GSAP",
 ];
 
